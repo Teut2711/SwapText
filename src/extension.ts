@@ -15,7 +15,8 @@ export function activate(context: vscode.ExtensionContext) {
 			if (editor.selections.length === 2) {
 				swapText(editor);
 
-			} else {
+			}
+			else {
 				vscode.window.showErrorMessage('Please make 2 selections in order to swap them');
 			}
 
@@ -27,7 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
 async function swapText(editor: vscode.TextEditor) {
 	const document = editor.document;
 	const selections = editor.selections;
-   
+
 	const [text1, text2] = selections.map(document.getText);
 	const boolean = await editor.edit(editBuilder => {
 		editBuilder.replace(selections[0], text2);

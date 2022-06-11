@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "relevent-project.interchangeText",
-				"title": "Interchange selection text"
+				"title": "SwapText: Swap text between two multicursor locations"
 			}
 		],
 		"keybindings": [
@@ -54,5 +54,9 @@
 		"webpack": "^5.72.1",
 		"webpack-cli": "^4.9.2",
 		"@vscode/test-electron": "^2.1.3"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Teut2711/SwapText.git"
 	}
 }
