@@ -1,5 +1,5 @@
-# relevent-project README
-VS Code extension to interchange multicursor selected text in the case of two multicursors.
+# SwapText
+VS code extension for swapping two texts present at two multicursor locations
 
 ## Features
 
