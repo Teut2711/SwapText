@@ -1,8 +1,9 @@
 {
-	"name": "relevent-project",
-	"displayName": "Show relevant project",
-	"description": "Shows the folders which you are working on and hides the other",
-	"version": "0.0.1",
+	"name": "swap-text",
+	"displayName": "SwapText",
+	"icon": "images/SwapText.png",
+	"description": "Swaps text between 2 multicursor locations",
+	"version": "0.0.5",
 	"engines": {
 		"vscode": "^1.68.0"
 	},
@@ -10,19 +11,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:relevent-project.interchangeText"
+		"onCommand:swap-text.interchangeText"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "relevent-project.interchangeText",
+				"command": "swap-text.interchangeText",
 				"title": "SwapText: Swap text between two multicursor locations"
 			}
 		],
 		"keybindings": [
 			{
-				"command": "relevent-project.interchangeText",
+				"command": "swap-text.interchangeText",
 				"key": "ctrl+i",
 				"when": "editorHasSelection"
 			}
@@ -58,5 +59,6 @@
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/Teut2711/SwapText.git"
-	}
+	},
+	"publisher": "VisheshMangla"
 }

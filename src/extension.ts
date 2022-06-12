@@ -6,7 +6,7 @@ import * as vscode from 'vscode';
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	let disposable = vscode.commands.registerCommand('relevent-project.interchangeText', () => {
+	let disposable = vscode.commands.registerCommand('swap-text.interchangeText', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
 		const editor = vscode.window.activeTextEditor;
@@ -35,10 +35,10 @@ async function swapText(editor: vscode.TextEditor) {
 		editBuilder.replace(selections[1], text1);
 	});
 	if (boolean) {
-		vscode.window.showInformationMessage("Swap completed!");
+		vscode.window.showInformationMessage("Swap completed");
 	}
 	else {
-		vscode.window.showErrorMessage("Swap failed");
+		vscode.window.showErrorMessage("Swap failed");;
 	}
 }
 // this method is called when your extension is deactivated

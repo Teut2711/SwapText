@@ -3,11 +3,11 @@ VS code extension for swapping two texts present at two multicursor locations
 
 ## Features
 
-Use ctrl+r key to execute the swap.
+Use `ctrl+i` key to execute the swap or press `ctrl+shift+p` and select `SwapText: Swap text between two multicursor locations`.
 
 ## Extension Settings
 
-* `relevent-project.interchangeText`: interchange text
+* `swap-text.interchangeText`: interchange text
 
 ## Known Issues
 
